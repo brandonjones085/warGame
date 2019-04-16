@@ -13,9 +13,9 @@ class Game
     int rounds;
     int type;
     int numberOfSidesPlayer1;
-    int player1Point;
+    int player1Point = 0;
     int numberOfSidesPlayer2;
-    int player2Point;
+    int player2Point = 0;
 
   public:
     // Game();

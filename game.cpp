@@ -18,7 +18,7 @@ int Game::menu()
 
 void Game::setNumberOfSidesPlayer1()
 {
-    std::cout << "Enter the number of sides for dice player 1 ";
+    std::cout << "Enter the number of sides for dice player 1: ";
     std::cin >> numberOfSidesPlayer1;
 }
 
@@ -29,7 +29,7 @@ int Game::getNumberOfSidesPlayer1()
 
 void Game::setNumberOfSidesPlayer2()
 {
-    std::cout << "Enter the number of sides for dice of player 2 ";
+    std::cout << "Enter the number of sides for dice of player 2: ";
     std::cin >> numberOfSidesPlayer2;
 }
 
