@@ -13,7 +13,9 @@ class Game
     int rounds;
     int type;
     int numberOfSidesPlayer1;
+    int player1Point;
     int numberOfSidesPlayer2;
+    int player2Point;
 
   public:
     // Game();
@@ -24,8 +26,12 @@ class Game
     int getType();
     void setNumberOfSidesPlayer1();
     int getNumberOfSidesPlayer1();
+    void setPlayer1Point(int);
+    int getPlayer1Point();
     void setNumberOfSidesPlayer2();
     int getNumberOfSidesPlayer2();
+    void setPlayer2Point(int);
+    int getPlayer2Point();
 };
 
 #endif

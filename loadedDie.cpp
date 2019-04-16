@@ -20,9 +20,8 @@ LoadedDie::LoadedDie(int num)
 int LoadedDie::randIntHigher()
 {
     int num;
-    int n = 6;
 
-    num = std::rand() % 6 + 1;
+    num = std::rand() % n + 1;
 
     num += 1;
     if (num > n)

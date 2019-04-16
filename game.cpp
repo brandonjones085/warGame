@@ -38,6 +38,26 @@ int Game::getNumberOfSidesPlayer2()
     return numberOfSidesPlayer2;
 }
 
+void Game::setPlayer1Point(int point)
+{
+    this->player1Point = point;
+}
+
+int Game::getPlayer1Point()
+{
+    return player1Point;
+}
+
+void Game::setPlayer2Point(int point)
+{
+    this->player2Point = point;
+}
+
+int Game::getPlayer2Point()
+{
+    return player2Point;
+}
+
 void Game::setRounds()
 {
     std::cout << "Enter the number of rounds: ";

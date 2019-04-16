@@ -21,8 +21,6 @@ int Die::getN()
 int Die::randInt()
 {
 	int num;
-	int n = getN();
-
 	num = std::rand() % n + 1;
 
 	return num;
