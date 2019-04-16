@@ -1,6 +1,6 @@
 /******************************************************************************* 
 ** Author:       Brandon Jones
-** Date:         04/015/2019
+** Date:         04/15/2019
 ** Description:  The header file for the loadedDie class
 *******************************************************************************/
 
@@ -12,6 +12,10 @@
 
 class LoadedDie : public Die
 {
+  private:
+    int rolledValue;
+    int sides;
+
   public:
     LoadedDie();
     LoadedDie(int);

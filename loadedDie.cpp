@@ -7,27 +7,31 @@
 #include "loadedDie.h"
 #include <iostream>
 
+//DEFAULT CONSTRUCTOR
 LoadedDie::LoadedDie()
 {
-    n = 0;
+    sides = 0;
+    srand(time(NULL));
 }
 
+//Constructor: takes in an integer and sets the number of sides to that integer
 LoadedDie::LoadedDie(int num)
 {
-    this->n = num;
+    this->sides = num;
+    srand(time(NULL));
 }
 
+//Returns a random integer between 1 and the number of sides. Then adds one to that value to make the average higher than the regular die.
 int LoadedDie::randIntHigher()
 {
-    int num;
 
-    num = std::rand() % n + 1;
+    rolledValue = std::rand() % sides + 1;
 
-    num += 1;
-    if (num > n)
+    rolledValue += 1;
+    if (rolledValue > sides)
     {
-        num = n;
+        rolledValue = sides;
     }
 
-    return num;
+    return rolledValue;
 }
