@@ -1,0 +1,6 @@
+﻿  die.cpp
+c:\users\brand\desktop\files\osu\cs162\week3\wargame\wargame\die.cpp(6): error C2653: 'Die': is not a class or namespace name
+c:\users\brand\desktop\files\osu\cs162\week3\wargame\wargame\die.cpp(8): error C2065: 'n': undeclared identifier
+c:\users\brand\desktop\files\osu\cs162\week3\wargame\wargame\die.cpp(12): error C2653: 'Die': is not a class or namespace name
+  main.cpp
+  Generating Code...
