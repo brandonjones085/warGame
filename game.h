@@ -28,7 +28,7 @@ class Game
     int getNumberOfSidesPlayer1();
     void setPlayer1Point(int);
     int getPlayer1Point();
-    void setTypePlayer1();
+    int setTypePlayer1();
     void setPlayer1Roll(int, int);
     int getPlayer1Roll();
     void setNumberOfSidesPlayer2();
@@ -37,6 +37,7 @@ class Game
     int getPlayer2Point();
     void setPlayer2Roll(int, int);
     int getPlayer2Roll();
+    int setTypePlayer2();
     void validateNumOfSides(int);
     void validateInt(int);
     void validateRounds(int);

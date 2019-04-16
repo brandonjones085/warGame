@@ -100,7 +100,8 @@ void Game::setRounds()
     validateRounds(rounds);
 }
 
-void validateRounds(int num)
+//Validation for the number of rounds user input
+void Game::validateRounds(int num)
 {
     while (!std::cin || (num < 1 || num > 100))
     {
@@ -117,25 +118,28 @@ int Game::getRounds()
 }
 
 //Returns an int. If 1 is returned, the main.cpp file will create a Die() object, if 2 is returned, a LoadedDie() object will be created.
-void Game::setTypePlayer1()
+int Game::setTypePlayer1()
 {
+    int choice;
     std::cout << "\nEnter the type of die for player 1\n";
-    std::cout << "Enter 1 for regualr die\n";
+    std::cout << "Enter 1 for regular die\n";
     std::cout << "Enter 2 for loaded die\n";
-    std::cin >> player1Type;
-
-    if (player1Type == 1)
-    {
-        Die p1(numberOfSidesPlayer1);
-        std::cout << "Regular die\n";
-    }
-    else
-    {
-        LoadedDie p1(numberOfSidesPlayer1);
-        std::cout << "Loaded die\n";
-    }
+    std::cin >> choice;
+    return choice;
 }
 
+//Sets the player to either a regular or loaded die
+int Game::setTypePlayer2()
+{
+    int choice;
+    std::cout << "\nEnter the type of die for player 2\n";
+    std::cout << "Enter 1 for regular die\n";
+    std::cout << "Enter 2 for loaded die\n";
+    std::cin >> choice;
+    return choice;
+}
+
+//Creates the object according to the user input. A 1 will create regular die and 2 will create loadedDie
 void Game::setPlayer1Roll(int num, int sides)
 {
 
@@ -151,11 +155,13 @@ void Game::setPlayer1Roll(int num, int sides)
     }
 }
 
+//Creates the object according to the user input. A 1 will create regular die and 2 will create loadedDie
 int Game::getPlayer1Roll()
 {
     return player1Roll;
 }
 
+//Creates the object according to the user input. A 1 will create regular die and 2 will create loadedDie
 void Game::setPlayer2Roll(int num, int sides)
 {
 

@@ -34,10 +34,13 @@ int main()
 		int point1 = 0;
 		int point2 = 0;
 
+		int playerOne = g.setTypePlayer1();
+		int playerTwo = g.setTypePlayer2();
+
 		//Loops through game according to number of rounds set
 		for (int i = 1; i <= rounds; i++)
 		{
-			g.setPlayer1Roll(1, num1);
+			g.setPlayer1Roll(playerOne, num1);
 			int one = g.getPlayer1Roll();
 
 			g.setPlayer2Roll(2, num2);
