@@ -2,6 +2,11 @@
 #include <cstdlib>
 #include <ctime>
 
+Die::Die()
+{
+	n = 0;
+}
+
 Die::Die(int num)
 {
 	this->n = num;

@@ -15,3 +15,47 @@ int Game::menu()
     std::cin >> choice;
     return choice;
 }
+
+void Game::setNumberOfSidesPlayer1()
+{
+    std::cout << "Enter the number of sides for dice player 1 ";
+    std::cin >> numberOfSidesPlayer1;
+}
+
+int Game::getNumberOfSidesPlayer1()
+{
+    return numberOfSidesPlayer1;
+}
+
+void Game::setNumberOfSidesPlayer2()
+{
+    std::cout << "Enter the number of sides for dice of player 2 ";
+    std::cin >> numberOfSidesPlayer2;
+}
+
+int Game::getNumberOfSidesPlayer2()
+{
+    return numberOfSidesPlayer2;
+}
+
+void Game::setRounds()
+{
+    std::cout << "Enter the number of rounds: ";
+    std::cin >> rounds;
+}
+
+int Game::getRounds()
+{
+    return rounds;
+}
+
+void Game::setType()
+{
+    std::cout << "Enter the type of die for each player: ";
+    std::cin >> type;
+}
+
+int Game::getType()
+{
+    return type;
+}

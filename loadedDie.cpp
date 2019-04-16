@@ -3,18 +3,22 @@
 ** Date:         04/015/2019
 ** Description:  The loadedDie class
 *******************************************************************************/
-
+#include "die.h"
 #include "loadedDie.h"
 #include <iostream>
 
 LoadedDie::LoadedDie()
 {
-    srand(time(NULL));
+    n = 0;
+}
+
+LoadedDie::LoadedDie(int num)
+{
+    this->n = num;
 }
 
 int LoadedDie::randIntHigher()
 {
-
     int num;
     int n = 6;
 

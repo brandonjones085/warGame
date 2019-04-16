@@ -10,11 +10,11 @@
 #include <cstdlib>
 #include <ctime>
 
-class LoadedDie
+class LoadedDie : public Die
 {
   public:
     LoadedDie();
-
+    LoadedDie(int);
     int randIntHigher();
 };
 
