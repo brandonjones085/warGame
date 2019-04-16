@@ -6,6 +6,7 @@
 
 #include "die.h"
 #include "loadedDie.h"
+#include "game.h"
 #include <iostream>
 
 int main()
@@ -13,12 +14,17 @@ int main()
 
 	Die d(6);
 	LoadedDie m;
+	Game g;
 
 	int test = d.randInt();
 
-	std::cout << "From the die: " << test << std::endl;
-
+	int menu = g.menu();
 	m.randIntHigher();
+	while (menu == 1)
+	{
+		std::cout << "Run game";
+	}
+	std::cout << "Goodbye";
 
 	return 0;
 }

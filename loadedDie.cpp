@@ -12,19 +12,19 @@ LoadedDie::LoadedDie()
     srand(time(NULL));
 }
 
-void LoadedDie::randIntHigher()
+int LoadedDie::randIntHigher()
 {
+
     int num;
     int n = 6;
 
     num = std::rand() % 6 + 1;
 
-    std::cout << "Number is " << num << std::endl;
-    num += 2;
+    num += 1;
     if (num > n)
     {
         num = n;
     }
 
-    std::cout << "+1 is " << num;
+    return num;
 }

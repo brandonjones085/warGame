@@ -12,10 +12,10 @@
 
 class LoadedDie
 {
-
   public:
     LoadedDie();
-    void randIntHigher();
+
+    int randIntHigher();
 };
 
 #endif
