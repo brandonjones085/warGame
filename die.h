@@ -8,11 +8,11 @@
 
 class Die
 {
-  protected:
-	int n;
-
   private:
 	int rolledValue;
+
+  protected:
+	int n;
 
   public:
 	Die();

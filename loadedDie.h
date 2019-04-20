@@ -13,8 +13,8 @@
 class LoadedDie : public Die
 {
   private:
-    int rolledValue;
     int sides;
+    int rolledValue;
 
   public:
     LoadedDie();

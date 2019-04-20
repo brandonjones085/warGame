@@ -7,6 +7,7 @@
 #include "loadedDie.h"
 #include "game.h"
 #include <iostream>
+#include <string>
 
 int main()
 {
@@ -34,8 +35,30 @@ int main()
 		int point1 = 0;
 		int point2 = 0;
 
-		int playerOne = g.setTypePlayer1();
-		int playerTwo = g.setTypePlayer2();
+		int playerOne = g.setTypePlayer1(); //Sets the type of die to regular or loaded
+		std::string playerOneString = "";
+
+		if (playerOne == 1)
+		{
+			playerOneString = " Regular Die ";
+		}
+		else
+		{
+			playerOneString = " Loaded Die ";
+		}
+
+		int playerTwo = g.setTypePlayer2(); //Sets the type of die to regular or loaded
+
+		std::string playerTwoString = "";
+
+		if (playerTwo == 1)
+		{
+			playerTwoString = " Regular Die ";
+		}
+		else
+		{
+			playerTwoString = " Loaded Die ";
+		}
 
 		//Loops through game according to number of rounds set
 		for (int i = 1; i <= rounds; i++)
@@ -64,8 +87,8 @@ int main()
 
 			//Output showing number of round, number rolled for each player, and number of points
 			std::cout << "\nRound number: " << i << std::endl;
-			std::cout << "\nPlayer 1 rolled " << one << std::endl;
-			std::cout << "Player 2 rolled " << two << std::endl;
+			std::cout << "\nPlayer 1 rolled " << one << " with a " << playerOneString << std::endl;
+			std::cout << "Player 2 rolled " << two << " with a " << playerTwoString << std::endl;
 			std::cout << "\nPlayer 1 Points: " << g.getPlayer1Point() << std::endl;
 			std::cout << "Player 2 Points: " << g.getPlayer2Point() << std::endl;
 			std::cin.clear();
